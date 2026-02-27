@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "m-365-spfx-vertical-section-spacing-client-side-solution",
+    "id": "9f3626cc-f562-4af3-bb6a-76133b3f9143",
+    "version": "1.0.0.5",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "m-365-spfx-vertical-section-spacing description"
+      },
+      "longDescription": {
+        "default": "m-365-spfx-vertical-section-spacing description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "m-365-spfx-vertical-section-spacing Feature",
+        "description": "The feature that activates elements of the m-365-spfx-vertical-section-spacing solution.",
+        "id": "1d9b84da-58fa-4732-a857-cfeee28ac61a",
+        "version": "1.0.0.0",
+        "componentIds": [
+          "30d97a56-d6db-48d3-ad50-bd7ca254f73c",
+          "a05e4681-5715-4995-968c-e1f16d024aaa"
+        ],
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/m-365-spfx-vertical-section-spacing.sppkg"
+  }
+}

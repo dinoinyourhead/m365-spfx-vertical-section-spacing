@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "componentType": "webpart",
+    "template": "react",
+    "componentName": "AurumSpacer",
+    "componentDescription": "Aurum Spacer",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "25.3.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "m-365-spfx-vertical-section-spacing",
+    "libraryId": "9f3626cc-f562-4af3-bb6a-76133b3f9143",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "m-365-spfx-vertical-section-spacing",
+    "solutionShortDescription": "m-365-spfx-vertical-section-spacing description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false
+  }
+}

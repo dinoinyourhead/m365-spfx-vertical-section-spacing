@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "aurum-spacer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/aurumSpacer/AurumSpacerWebPart.js",
+          "manifest": "./src/webparts/aurumSpacer/AurumSpacerWebPart.manifest.json"
+        }
+      ]
+    },
+    "vertical-section-spacing-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/verticalSectionSpacing/VerticalSectionSpacingApplicationCustomizer.js",
+          "manifest": "./src/extensions/verticalSectionSpacing/VerticalSectionSpacingApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AurumSpacerWebPartStrings": "lib/webparts/aurumSpacer/loc/{locale}.js",
+    "VerticalSectionSpacingApplicationCustomizerStrings": "lib/extensions/verticalSectionSpacing/loc/{locale}.js"
+  }
+}

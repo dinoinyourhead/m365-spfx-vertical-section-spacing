@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="VerticalSectionSpacing"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="a05e4681-5715-4995-968c-e1f16d024aaa"
+        ClientSideComponentProperties="{}">
+    </CustomAction>
+</Elements>
