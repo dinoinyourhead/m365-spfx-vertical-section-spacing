@@ -51,21 +51,17 @@ export default class VerticalSectionSpacingApplicationCustomizer
     const props = this.properties;
 
     // 1. Check Path
-    let currentPath = window.location.pathname.toLowerCase();
-    if (currentPath === "") {
-      currentPath = "/";
-    }
-    const enabledPaths = (props.enabledPaths || [
-      "/",
-      "/sitepages/home.aspx",
-      "/sitepages/collabhome.aspx"
-    ]).map(p => (p || "").toLowerCase());
+    const currentHref = window.location.href.toLowerCase();
 
-    const isEnabledPath = enabledPaths.indexOf(currentPath) !== -1 ||
-      currentPath.endsWith("/sitepages/home.aspx") ||
-      currentPath.endsWith("/sitepages/collabhome.aspx");
+    const isRootSite = currentHref === "https://aurumconsultinggmbh.sharepoint.com" ||
+      currentHref === "https://aurumconsultinggmbh.sharepoint.com/";
 
-    console.log(`[VerticalSectionSpacing] currentPath: "${currentPath}"`);
+    const isEnabledPath = isRootSite ||
+      currentHref.indexOf("/sitepages/home.aspx") !== -1 ||
+      currentHref.indexOf("/sitepages/collabhome.aspx") !== -1 ||
+      currentHref.indexOf("/sitepages/topichome.aspx") !== -1;
+
+    console.log(`[VerticalSectionSpacing] currentHref: "${currentHref}"`);
     console.log(`[VerticalSectionSpacing] window.location.href: "${window.location.href}"`);
     console.log(`[VerticalSectionSpacing] isEnabledPath: ${isEnabledPath}`);
 

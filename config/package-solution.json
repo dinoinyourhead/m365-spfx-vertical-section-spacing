@@ -3,7 +3,7 @@
   "solution": {
     "name": "m-365-spfx-vertical-section-spacing-client-side-solution",
     "id": "9f3626cc-f562-4af3-bb6a-76133b3f9143",
-    "version": "1.0.0.8",
+    "version": "1.0.0.9",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
