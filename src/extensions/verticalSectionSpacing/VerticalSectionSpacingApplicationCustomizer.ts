@@ -51,15 +51,19 @@ export default class VerticalSectionSpacingApplicationCustomizer
     const props = this.properties;
 
     // 1. Check Path
-    const currentPath = window.location.pathname.toLowerCase();
+    let currentPath = window.location.pathname.toLowerCase();
+    if (currentPath === "") {
+      currentPath = "/";
+    }
     const enabledPaths = (props.enabledPaths || [
       "/",
       "/sitepages/home.aspx",
-      "/sitepages/topichome.aspx"
-    ]).map(p => p.toLowerCase());
+      "/sitepages/collabhome.aspx"
+    ]).map(p => (p || "").toLowerCase());
 
-    const isTopicHome = currentPath.endsWith("/sitepages/topichome.aspx");
-    const isEnabledPath = enabledPaths.indexOf(currentPath) !== -1 || isTopicHome;
+    const isEnabledPath = enabledPaths.indexOf(currentPath) !== -1 ||
+      currentPath.endsWith("/sitepages/home.aspx") ||
+      currentPath.endsWith("/sitepages/collabhome.aspx");
 
     if (!isEnabledPath) {
       this._disposeObserver();
