@@ -65,6 +65,10 @@ export default class VerticalSectionSpacingApplicationCustomizer
       currentPath.endsWith("/sitepages/home.aspx") ||
       currentPath.endsWith("/sitepages/collabhome.aspx");
 
+    console.log(`[VerticalSectionSpacing] currentPath: "${currentPath}"`);
+    console.log(`[VerticalSectionSpacing] window.location.href: "${window.location.href}"`);
+    console.log(`[VerticalSectionSpacing] isEnabledPath: ${isEnabledPath}`);
+
     if (!isEnabledPath) {
       this._disposeObserver();
       this._removeStyle();
